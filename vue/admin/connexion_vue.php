@@ -34,27 +34,62 @@
 				<form class="space-y-4" action="#" method="POST">
 					<input type="hidden" name="remember" value="True">
 					<div class="rounded-md shadow-sm -space-y-px">
-						<div class="grid gap-6">
-							<div class="col-span-12">
+                      <div class="grid gap-6">
+
+                      <div class="col-span-12">
+								<label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+								<input type="text" name="nom" id="nom" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="prenom" class="block text-sm font-medium text-gray-700">Prenom</label>
+								<input type="text" name="prenom" id="prenom" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="adresse" class="block text-sm font-medium text-gray-700">Adresse</label>
+								<input type="text" name="adresse" id="adresse" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="phone" class="block text-sm font-medium text-gray-700">Téléphone</label>
+								<input type="phone" name="phone" id="phone" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+              <div class="col-span-12">
+								<label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+								<input type="text" name="nom" id="nom" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="prenom" class="block text-sm font-medium text-gray-700">Prenom</label>
+								<input type="text" name="prenom" id="prenom" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="mail" class="block text-sm font-medium text-gray-700">Mail</label>
+								<input type="email" name="mail" id="mail" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+
+                            <div class="col-span-12">
+								<label for="pseudo" class="block text-sm font-medium text-gray-700">Pseudo</label>
+								<input type="text" name="pseudo" id="pseudo" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+							</div>
+                        <div class="col-span-12">
                             <label for="password" class="sr-only">Password</label>
                            <div>
                         </div>
-                         <div>
+                      <div>
                     
 						    <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
 							</div><br>
+
+
+
+
+
 						</div>
 					</div>
-
-					<div class="flex items-center justify-between">
-						
-						<div class="text-sm">
-							<a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 ">
-								Create an account ?
-							</a>
-						</div><br>
-					</div>
-
 
 					<div>
 						<button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
