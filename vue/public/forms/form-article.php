@@ -12,52 +12,6 @@
 
   <body>
 
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <nav class="bg-gray-800">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-
-              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex-shrink-0 flex items-center">
-              <div class="bg-white  h-10 w-10 rounded-full shadow-xl  ">
-                <div class=" border-4 border-red-500 h-6 w-6 rounded-full "></div>
-                <div class=" bg-red-200 h-4 w-4 rounded-full ml-1 "></div>
-              </div>
-              <h3 style="color: white; text-shadow:1px 1px 1px white">NewGeneration</h3>
-            </div>
-            <div class="hidden sm:block sm:ml-6">
-              <div class="flex space-x-4">
-                <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Boutique</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Articles</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Panier</a>
-
-                <a href="../admin/admin_vue.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Admin</a>
-
-                <a href="../admin/membre_vue.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Membres</a>
-
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Connexion</a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
     <div class="bg-white">
       <div class="pt-6">
         <nav aria-label="Breadcrumb">
@@ -188,30 +142,41 @@
                     <div class="px-4 bg-white space-y-6 sm:p-6">
                       <fieldset>
                         <div class="mt-4 space-y-4">
+                          <p class="text-gray-500">NB: Si votre produit est modifiable sur un critère, <br>
+                          cochez la case et mettez les caractérisques disponible pour ce produit.</p>
                           <div class="flex flex-wrap -mx-3 mb-2">
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                          <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                               <div class="flex items-start">
                                 <div class="flex items-center h-5">
-                                  <input id="couleur" name="couleur" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                  <input id="check" name="taille" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                  <label for="taille" class="font-medium text-gray-700">TAILLE</label>
+                                </div>
+                              </div>
+                              <textarea id="couleur" name="couleuradd" rows="5" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Saisir les tailles du produit séparée par | "></textarea>
+                            </div>
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                              <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                  <input id="check1" name="couleur" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                 </div>
                                 <div class="ml-3 text-sm">
                                   <label for="couleur" class="font-medium text-gray-700">COULEUR</label>
-                                  <p class="text-gray-500">La couleur du produit est modifiable ? </p>
                                 </div>
                               </div>
-                              <textarea name="couleuradd" rows="5" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Saisir les couleurs du produit séparée par | "></textarea>
+                              <textarea id="couleur" name="couleuradd" rows="5" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Saisir les couleurs du produit séparée par | "></textarea>
                             </div>
-                            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                               <div class="flex items-start">
                                 <div class="flex items-center h-5">
-                                  <input id="forme" name="forme" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                  <input id="check2" name="forme" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                 </div>
                                 <div class="ml-3 text-sm">
                                   <label for="forme" class="font-medium text-gray-700">FORME</label>
-                                  <p class="text-gray-500">La forme du produit est modifiable ? </p>
                                 </div>
                               </div>
-                              <textarea name="formeadd" rows="5" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Saisir les formes du produit séparée par | "></textarea>
+                              <textarea id="forme" name="formeadd" rows="5" class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" placeholder="Saisir les formes du produit séparée par | "></textarea>
                             </div>
                           </div>
                         </div>
@@ -270,4 +235,5 @@
       </div>
     </div>
   </body>
-  </html-->
+
+  </html>
