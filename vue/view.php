@@ -22,10 +22,8 @@
             <?php
             //Contenu de la page
             //require_once('../controller/contenu.php');
-            //require_once('../vue/public/forms/form-article.php');
-            //require_once('../vue/public/article.php');
-            //require_once('../vue/admin/connexion_vue.php');
-            require_once('../vue/public/show.article.php');
+            //require_once('../vue/public/forms/confirmation.liv.php');
+            require_once('../vue/public/forms/livraison.php');
             ?>
         </div>
         <div>
